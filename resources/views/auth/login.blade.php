@@ -9,11 +9,9 @@
        </div>
      </div>
   </section>
-	<!-- BEGIN PAGE LEVEL STYLES -->
-	<link href="https://portal.polinema.ac.id/assets/css/login-2.min.css" rel="stylesheet" type="text/css" />
-	<!-- END PAGE LEVEL STYLES -->
 @section('login')
-<div class="big-header">Sistem Informasi Penjualanan <span>Toko Barokah Jaya</span></div>
+<center>
+<div class="big-header">Sistem Informasi Penjualanan <span>Toko Barokah Jaya</span></div></center>
 <div class="login-box">
 
     <!-- /.login-logo -->

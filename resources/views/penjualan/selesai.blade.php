@@ -21,7 +21,7 @@
             </div>
             <div class="box-footer">
                 @if ($setting->tipe_nota == 1)
-                <button class="btn btn-warning btn-flat" onclick="notaKecil('{{ route('transaksi.nota_kecil') }}', 'Nota Kecil')">Cetak Ulang Nota</button>
+                <button class="btn btn-warning btn-flat" onclick="notaKecil('{{ route('transaksi.nota_kecil') }}', ' Kecil')">Cetak Ulang Nota</button>
                 @else
                 <button class="btn btn-warning btn-flat" onclick="notaBesar('{{ route('transaksi.nota_besar') }}', 'Nota PDF')">Cetak Ulang Nota</button>
                 @endif
@@ -43,6 +43,9 @@
 
     function notaBesar(url, title) {
         popupCenter(url, title, 900, 675);
+    }
+    function imagecreatefromwebp(){
+        
     }
 
     function popupCenter(url, title, w, h) {

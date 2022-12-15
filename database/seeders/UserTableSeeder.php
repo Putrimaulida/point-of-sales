@@ -28,12 +28,18 @@ class UserTableSeeder extends Seeder
                 'password' => bcrypt('123'),
                 'foto' => '/img/user.jpg',
                 'level' => 2
-            ]
+            ],
+                'name' => 'Nanda Eca',
+                'email' => 'nanda@gmail.com',
+                'password' => bcrypt('nanda'),
+                'foto' => '/img/user.jpg',
+                'level' => 2
         );
 
         array_map(function (array $user) {
             User::query()->updateOrCreate(
                 ['email' => $user['email']],
+                ['password' => $user['password']],
                 $user
             );
         }, $users);
